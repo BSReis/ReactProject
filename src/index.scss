@@ -49,7 +49,7 @@ html body {
     & div:nth-child(2) {
         display: flex;
         align-items: center;
-        & div{
+        & div {
             margin: 0 8px;
         }
     }
@@ -66,14 +66,66 @@ html body {
         font-size: 32px;
         font-weight: 600;
     }
-    & div:nth-child(3) {
-        font-size: 18px;
-        color: $primary;
-        font-weight: 400;
-    }
+}
+
+.subTitle {
+    font-size: 18px;
+    color: $primary;
+    font-weight: 400;
 }
 
 .asideOrganizer {
-    margin: 0 44px;
-    margin-top: 150px;
+    margin: 150px 0 0 44px;
+}
+
+.avatarOrganizer {
+    & img {
+        height: 150px;
+        width: 150px;
+    }
+}
+.descriptionAboutme {
+    font-size: 16px;
+    color: $textGrey;
+    font-weight: 400;
+}
+
+.socialIcons {
+    display: flex;
+    & div {
+        margin-right: 16px;
+    }
+}
+.inputConfig{
+    width: 80%;
+    height: 100px;
+    display: flex;
+}
+
+
+.boxComment {
+    border: black solid 1px;
+    height:50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 8px;
+    margin-bottom:8px;
+    & p {
+    }
+    &::before,
+    &::after {
+        position: absolute;
+        right: 24px;
+        content: "";
+        height: 28px;
+        width: 2px;
+        background-color: $textGrey;
+    }
+    &:before {
+        transform: rotate(45deg);
+    }
+    &:after {
+        transform: rotate(-45deg);
+    }
 }

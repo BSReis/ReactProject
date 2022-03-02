@@ -1,0 +1,30 @@
+$primary: #3c5b80;
+$backgroundWhite: #fffffe;
+$titleColor: #68809d;
+$white: #ffffff;
+$black: #2b2b2b;
+
+$borderShaddow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+$backgroundColorGeneral: #fafafa;
+
+$textGrey: #8c8c8c;
+$gray: #c6c6c6;
+
+$tablet: 750px;
+$desktop: 960px;
+$desktoplg: 1400px;
+
+$gridcolumns: 6;
+$gridgutter: 8px;
+$i: 1;
+
+$grigutterDesktop: 24px;
+
+$gridwidth: calc(100% - #{$gridgutter} - 32px);
+$gridwidtht: calc(90% - #{$gridgutter});
+$gridwidthd: $desktop - $gridgutter * 2;
+$gridwidthdlg: $desktoplg - $gridgutter * 3;
+
+$basefontsizemobile: 14px;
+$basefontsizetablet: 16px;
+$basefontsizedesktop: $grigutterDesktop / 3 * 2;

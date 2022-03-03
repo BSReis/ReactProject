@@ -2,21 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { Route, Switch } from "react-router-dom";
+import { Route, BrowserRouter } from "react-router-dom";
 
-import ErroR from "./Error.js";
 
 import reportWebVitals from './reportWebVitals';
+import ErroR from './Error';
 
 
 ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>, document.getElementById('root')
+  <App />
+  , document.getElementById('root')
 );
 
 reportWebVitals();
 
-<Switch>
-  <Route exact path="/" component={ErroR} />
-</Switch>

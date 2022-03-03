@@ -1,7 +1,4 @@
 import './index.css';
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from "react-router-dom";
 
 function ErroR() {
     return (
@@ -12,12 +9,8 @@ function ErroR() {
         </div>
     );
 }
-ReactDOM.render(
-    <BrowserRouter>
-        <ErroR />
-    </BrowserRouter>,
-    document.getElementById('ErroR')
-);
+
+
 export default ErroR;
 
 

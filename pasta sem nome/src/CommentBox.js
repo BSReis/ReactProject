@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
-import PropTypes from "prop-types";
 
 const node = document.getElementById("test");
 
@@ -100,7 +99,6 @@ class CommentBox extends Component {
     }
     handleCommitSubmit(comment) {
         const comments = this.state.comments;
-        comment.id = Date.now();
         const newComments = comments.concat([comment]);
         this.setState({
             comments: newComments
@@ -128,7 +126,11 @@ class CommentBox extends Component {
     }
 }
 
-
-
-
+render(
+    React.createElement(CommentBox, {
+        comments: data.comments,
+        post: data.post
+    }),
+    node
+);
 export default Post;

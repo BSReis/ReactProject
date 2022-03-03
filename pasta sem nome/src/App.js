@@ -5,12 +5,22 @@ import ReactDOM from 'react-dom';
 import AboutME from "./AboutMe.js";
 import ImgBlog from "./ImgBlog";
 import Post from "./CommentBox"
+import ErroR from './Error';
+import { Link } from 'react-router-dom';
+
 
 const description = {
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita beatae aperiam rerum voluptate temporibus optio esse est consectetur architecto, impedit voluptatem ratione quis id tempora deleniti at qui vel placeat?',
     name: 'Hi, I am Joana'
 };
-
+const data = {
+    post: {
+        id: 1,
+        content:
+            "Comments"
+    },
+    comments: []
+};
 
 
 function App() {
@@ -18,7 +28,6 @@ function App() {
         <div>
             <nav className="navigationBar">
                 <section>
-                    <div><Link to="/">Home</Link></div>
                     <div><a href="#">Work</a></div>
                     <div><a href="#">Social</a></div>
                 </section>
@@ -43,23 +52,20 @@ function App() {
                         <div><ImgBlog /></div>
                         <div>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus aperiam hic aliquid. Consequuntur,
-                            reprehenderit.
-                            Natus aspernatur deserunt vel quasi officiis eum.
-                            Repellendus voluptatum, maiores nobis, quis odio ullam quos non!
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus aperiam hic aliquid. Consequuntur,
-                            reprehenderit.
-                            Natus aspernatur deserunt vel quasi officiis eum.
-                            Repellendus voluptatum, maiores nobis, quis odio ullam quos non!
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus aperiam hic aliquid. Consequuntur,
-                            reprehenderit.
-                            Natus aspernatur deserunt vel quasi officiis eum.
-            Repellendus voluptatum, maiores nobis, quis odio ullam quos non!</p>
+                                reprehenderit.
+                                Natus aspernatur deserunt vel quasi officiis eum.
+                                Repellendus voluptatum, maiores nobis, quis odio ullam quos non!
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus aperiam hic aliquid. Consequuntur,
+                                reprehenderit.
+                                Natus aspernatur deserunt vel quasi officiis eum.
+                                Repellendus voluptatum, maiores nobis, quis odio ullam quos non!
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus aperiam hic aliquid. Consequuntur,
+                                reprehenderit.
+                                Natus aspernatur deserunt vel quasi officiis eum.
+                                Repellendus voluptatum, maiores nobis, quis odio ullam quos non!</p>
                         </div>
                     </section>
-                    <section id="test">
-                        {/* <Post comments= {data.comments} post= {data.post}/> */}
 
-                    </section>
                 </section>
                 <aside className="col-d-4">
 
@@ -75,7 +81,7 @@ function App() {
 
 ReactDOM.render(
     <React.StrictMode>
-      <App />
+        <App />
     </React.StrictMode>, document.getElementById('root')
-  );
+);
 export default App;

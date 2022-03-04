@@ -1031,4 +1031,12 @@ html body {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
+
+.error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  color: red;
+}
 /*# sourceMappingURL=index.css.map */

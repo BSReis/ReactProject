@@ -1,10 +1,15 @@
 import './index.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import pngwing from './img/pngwing.png';
 import logo2 from './img/Vector.svg';
 import logo3 from './img/Vector (1).svg';
 import logo4 from './img/Vector (2).svg';
 
-
+const description = {
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita beatae aperiam rerum voluptate temporibus optio esse est consectetur architecto, impedit voluptatem ratione quis id tempora deleniti at qui vel placeat?',
+    name: 'Hi, I am Joana'
+  };
 function AboutME(props) {
     
     return (
@@ -15,11 +20,10 @@ function AboutME(props) {
                 <p>{props.text}</p>
             </div>
             <div className="socialIcons">
-                <div><a href="#"><img src={logo2} /></a></div>
-                <div><a href="#"><img src={logo3} /></a></div>
-                <div><a href="#"><img src={logo4} /></a></div>
+                
             </div>
         </div>
     );
 }
+
 export default AboutME;
